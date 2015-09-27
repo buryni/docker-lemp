@@ -1,24 +1,22 @@
-docker-lemp
-===========
+nginx-php
+=========
 
-[![Join the chat at https://gitter.im/docker-parasites/docker-lemp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/docker-parasites/docker-lemp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-We suppose this is a develop environment for phpers.
-
-Don't use it in product environment.
+Use at your own risk.
 
 # Usage
 
-    docker run -d --name=lemp \
+    docker run -d --name=nginx-php \
       -v /path/to/www/:/var/www/ \
-      -v /path/to/mysql:/var/lib/mysql \
       -p port_of_nginx:80 \
-      stenote/docker-lemp:latest
+      buryni/nginx-php:latest
 
-# Detail
+# Details
 
-## MySQL
-* user: root
-* (No password)
+## VERSIONS
+* SO: Ubuntu Server 14.04
+* WEB-SERVER: Nginx 
+* PHP: 
 
 ## SSH
-We don't support SSH right now. You can use `docker exec` to enter the docker container.
+
+Use `docker exec` to enter the docker container.
